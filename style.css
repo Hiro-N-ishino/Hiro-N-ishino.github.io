@@ -1,6 +1,62 @@
+.fade_background{
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: lightgray;
+  opacity: 1;
+  animation: fadeInOut_bg 4s forwards;
+  z-index: 1;
+}
+
+@keyframes fadeInOut_bg{
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 1;
+  }
+  90%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.fade_logo_image{
+  position: fixed;
+  top: 50%; left: 50%;
+  width: 80vw;
+  height: 80vh;
+  transform: translate(-50%, -50%);
+  background-image: url('images/dot_init_transparent.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  animation: fadeInOut_logo 4s forwards;
+  z-index: 2;
+}
+
+@keyframes fadeInOut_logo{
+  0%{
+    opacity: 0;
+  }
+  20%{
+    opacity: 1;
+  }
+  60%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
 .center_logo{
   display: block;
   margin: 0 auto;
-  max-width: 10%;
+  max-width: 100%;
   height: auto;
 }
