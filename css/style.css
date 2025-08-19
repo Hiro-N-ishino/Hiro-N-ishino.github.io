@@ -29,7 +29,7 @@
   width: 80vw;
   height: 80vh;
   transform: translate(-50%, -50%);
-  background-image: url('images/dot_init_transparent.png');
+  background-image: url('../images/dot_init_transparent.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -84,7 +84,7 @@ body{
   z-index: 3;
   opacity: 0;
   animation: fadeInHeader 0.5s ease-in forwards;
-  animation-delay: 2s; /* フェード終了後に表示 */
+  animation-delay: 2s;
 }
 @keyframes fadeInHeader {
   to {
