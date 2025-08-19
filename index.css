@@ -89,6 +89,7 @@ img.header_logo{
   height: 30px;
   vertical-align: middle;
   margin-right: 0.5em;
+  filter: drop-shadow(0 0 8px rgba(255, 250, 180, 1))
 }
 
 .menu-icon {
