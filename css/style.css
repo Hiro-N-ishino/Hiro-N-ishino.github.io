@@ -168,7 +168,7 @@ img.header_logo{
     padding: 0.5rem 0;
   }
 
-  .menu-toggle:checked ~ .nav {
+  .menu-toggle:checked + .menu-icon + .nav {
     display: flex;
   }
 }
