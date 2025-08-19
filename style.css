@@ -3,17 +3,16 @@
   top: 0; left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: lightgray;
+  background-color: rgb(230,230,230);
   opacity: 1;
-  animation: fadeInOut_bg 4s forwards;
+  animation: fadeInOut_bg 3s forwards;
   z-index: 1;
 }
-
 @keyframes fadeInOut_bg{
   0%{
     opacity: 1;
   }
-  50%{
+  70%{
     opacity: 1;
   }
   90%{
@@ -35,10 +34,9 @@
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0;
-  animation: fadeInOut_logo 4s forwards;
+  animation: fadeInOut_logo 3s forwards;
   z-index: 2;
 }
-
 @keyframes fadeInOut_logo{
   0%{
     opacity: 0;
@@ -46,7 +44,7 @@
   20%{
     opacity: 1;
   }
-  60%{
+  40%{
     opacity: 1;
   }
   100%{
@@ -54,9 +52,80 @@
   }
 }
 
-.center_logo{
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+.header{
+  background: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  position: relative;
+}
+
+.logo{
+  font-size: 1.5rem;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* ハンバーガー表示 */
+  .menu-icon {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #444;
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  .nav li {
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  /* チェックが入ると表示 */
+  .menu-toggle:checked + .menu-icon + .nav {
+    display: flex;
+  }
 }
