@@ -6,6 +6,7 @@
   background-color: rgb(230,230,230);
   opacity: 1;
   animation: fadeInOut_bg 3s forwards;
+  pointer-events: none;
   z-index: 1;
 }
 @keyframes fadeInOut_bg{
@@ -35,6 +36,7 @@
   background-position: center;
   opacity: 0;
   animation: fadeInOut_logo 3s forwards;
+  pointer-events: none;
   z-index: 2;
 }
 @keyframes fadeInOut_logo{
@@ -167,4 +169,56 @@ img.header_logo{
   .menu-toggle:checked + .menu-icon + .nav {
     display: flex;
   }
+}
+
+.main-content {
+  max-width: 800px;       /* 読みやすい横幅に制限 */
+  margin: 40px auto 80px; /* 上40px、左右自動中央、下80pxの余白 */
+  padding: 30px 40px;     /* 内側の余白 */
+  background-color: #333; /* 濃いグレーの背景 */
+  color: #eee;            /* 明るいテキスト色 */
+  border-radius: 12px;    /* 角丸 */
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.5), /* 立体感の影 */
+    inset 0 0 20px rgba(255, 255, 255, 0.05); /* 内側の光沢 */
+  font-size: 1.15rem;
+  line-height: 1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  color: #f0f0f0;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+  border-bottom: 3px solid #666;
+  padding-bottom: 12px;
+}
+
+.main-content p {
+  margin-bottom: 25px;
+  color: #ddd;
+}
+
+.main-content a {
+  color: #7ab8ff;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  font-weight: 600;
+  text-shadow: 0 0 2px rgba(122, 184, 255, 0.6);
+}
+
+.main-content a:hover {
+  color: #a0c8ff;
+  text-shadow: 0 0 6px rgba(160, 200, 255, 0.9);
+  text-decoration: underline;
+}
+
+.main-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto; /* センター寄せ + 上下余白 */
+  border-radius: 8px; /* 角丸（好みで） */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4); /* 軽い影でバエ感アップ */
 }
