@@ -63,8 +63,19 @@ body{
 }
 
 .header{
-  background: linear-gradient(to bottom right, #fff, #333);;
-  color: #333;
+  background: linear-gradient(to bottom right, #fff, #666);;
+  color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  position: relative;
+  z-index: 3;
+}
+
+.header_home{
+  background: linear-gradient(to bottom right, #fff, #666);;
+  color: #444;
   display: flex;
   align-items: center;
   justify-content: space-between;
