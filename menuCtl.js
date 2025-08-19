@@ -2,12 +2,10 @@ window.addEventListener('DOMContentLoaded', () => {
   const menuToggle = document.getElementById('menu-toggle');
   const nav = document.querySelector('.nav');
 
-  // ページ読み込み時にメニューを閉じる
   if (menuToggle) {
     menuToggle.checked = false;
   }
 
-  // メニュー外をクリックしたら閉じる
   document.addEventListener('click', (e) => {
     const isMenuClick = menuToggle.contains(e.target) ||
                         nav.contains(e.target) ||
@@ -17,4 +15,11 @@ window.addEventListener('DOMContentLoaded', () => {
       menuToggle.checked = false;
     }
   });
+});
+
+window.addEventListener('pageshow', () => {
+  const menuToggle = document.getElementById('menu-toggle');
+  if (menuToggle) {
+    menuToggle.checked = false;
+  }
 });
