@@ -34,6 +34,8 @@
   text-align: left;
 }
 .profile-table th {
+  position: sticky;
+  top: 59px;
   background-color: rgb(171,171,171);
   color: black;
   text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
@@ -44,7 +46,21 @@
     color: black;
 }
 
-.section-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 30px;
+ul.profile-list {
+  width: 100%;
+  background-color: white;
+  padding-left: calc(1.2em + 12px);
+  margin-top: 20px;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  list-style-type: disc; /* ちゃんと「・」が出る */
+  list-style-position: outside; /* マークは左に出る */
+}
+
+ul.profile-list li {
+  margin-bottom: 8px;
+  color: #555;
+}
+

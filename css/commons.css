@@ -66,6 +66,7 @@ body{
 
 .header{
   top: 0;
+  height: 60px;
   background: linear-gradient(to bottom right, #fff, #666);;
   color: #444;
   display: flex;
@@ -78,6 +79,7 @@ body{
 
 .header_home{
   top: 0;
+  height: 60px;
   background: linear-gradient(to bottom right, #fff, #666);;
   color: #444;
   display: flex;
