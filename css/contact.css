@@ -49,3 +49,76 @@
   .main-content button:hover {
     background-color: #0056b3;
   }
+
+.custom-confirm-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 10000;
+  /* display: blockで背景のみ */
+  display: block;
+}
+
+.custom-confirm-modal .modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2e2e2e;
+  border-radius: 12px;
+  padding: 30px 40px;
+  max-width: 380px;
+  width: 90%;
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.9),
+    inset 0 0 40px rgba(255, 255, 255, 0.1);
+  color: #f0f0f0;
+  font-size: 1.25rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.custom-confirm-modal .button-group {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.custom-confirm-modal .btn {
+  padding: 14px 36px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.25s ease;
+  min-width: 120px;
+  user-select: none;
+}
+
+.custom-confirm-modal .btn-confirm {
+  background-color: #1e90ff;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(30, 144, 255, 0.6);
+}
+
+.custom-confirm-modal .btn-confirm:hover {
+  background-color: #0056b3;
+  box-shadow: 0 6px 14px rgba(0, 86, 179, 0.9);
+}
+
+.custom-confirm-modal .btn-cancel {
+  background-color: #555;
+  color: #ddd;
+  box-shadow: 0 4px 8px rgba(85, 85, 85, 0.6);
+  white-space: nowrap;
+}
+
+.custom-confirm-modal .btn-cancel:hover {
+  background-color: #888;
+  box-shadow: 0 6px 14px rgba(136, 136, 136, 0.9);
+}
