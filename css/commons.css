@@ -241,7 +241,7 @@ img.header_logo{
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 20px auto; /* センター寄せ + 上下余白 */
-  border-radius: 8px; /* 角丸（好みで） */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4); /* 軽い影でバエ感アップ */
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
