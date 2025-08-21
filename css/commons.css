@@ -67,7 +67,7 @@ body{
 .header{
   top: 0;
   height: 60px;
-  background: linear-gradient(to bottom right, #fff, #666);;
+  background: linear-gradient(to bottom right, #fff, #666);
   color: #444;
   display: flex;
   align-items: center;
@@ -80,7 +80,7 @@ body{
 .header_home{
   top: 0;
   height: 60px;
-  background: linear-gradient(to bottom right, #fff, #666);;
+  background: linear-gradient(to bottom right, #fff, #666);
   color: #444;
   display: flex;
   align-items: center;
@@ -106,7 +106,7 @@ img.header_logo{
   height: 30px;
   vertical-align: middle;
   margin-right: 0.5em;
-  filter: drop-shadow(0 0 8px rgba(255, 250, 180, 1))
+  filter: drop-shadow(0 0 8px rgba(255, 250, 180, 1));
 }
 
 .menu-icon {
@@ -156,6 +156,14 @@ img.header_logo{
     background: #444;
     display: none;
     flex-direction: column;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+  }
+
+  .menu-toggle:checked + .menu-icon + .nav {
+    display: flex;
+    max-height: 500px; /* メニューの高さに応じて調整 */
   }
 
   .nav ul {
@@ -165,26 +173,43 @@ img.header_logo{
     gap: 1rem;
   }
 
+/*
   .nav li {
     text-align: center;
     padding: 0.5rem 0;
   }
+*/
 
   .menu-toggle:checked + .menu-icon + .nav {
     display: flex;
   }
+  .nav li a {
+    display: block;
+    padding: 0.75rem 1rem;
+    text-decolation: none;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+
+  .nav li a:hover {
+    background-color: #555;
+  }
+
+  .nav li:not(:last-child) {
+    border-bottom: 1px solid #666;
+  }
 }
 
 .main-content {
-  max-width: 800px;       /* 読みやすい横幅に制限 */
-  margin: 40px auto 80px; /* 上40px、左右自動中央、下80pxの余白 */
-  padding: 30px 40px;     /* 内側の余白 */
-  background-color: #333; /* 濃いグレーの背景 */
-  color: #eee;            /* 明るいテキスト色 */
-  border-radius: 12px;    /* 角丸 */
+  max-width: 800px;
+  margin: 40px auto 80px;
+  padding: 30px 40px;
+  background-color: #333;
+  color: #eee;
+  border-radius: 12px;
   box-shadow:
-    0 4px 15px rgba(0, 0, 0, 0.5), /* 立体感の影 */
-    inset 0 0 20px rgba(255, 255, 255, 0.05); /* 内側の光沢 */
+    0 4px 15px rgba(0, 0, 0, 0.5),
+    inset 0 0 20px rgba(255, 255, 255, 0.05);
   font-size: 1.15rem;
   line-height: 1.6;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
