@@ -117,6 +117,7 @@ img.header_logo{
 
 .menu-toggle {
   display: none;
+  z-index: 100;
 }
 
 .nav a {
