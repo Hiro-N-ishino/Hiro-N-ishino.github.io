@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>.init - CONTACT -</title>
   <link rel='stylesheet' href='../../css/commons.css'>
+  <link rel='stylesheet' href='../../css/contact.css'>
 </head>
 <body>
   <header class='header'>
@@ -26,9 +27,37 @@
   </header>
 
   <div class='main-content'>
-    <h1>Contact</h1>
+    <h1>お問い合わせ</h1>
+      <p>
+      </p>
+    <form action="https://formspree.io/f/xrblwvgz" method="POST">
+      <label>
+        返信用アドレス:
+        <input type="email" name="email">
+      </label>
+
+      <label>
+        問い合わせ内容:
+        <select name="inquiry-type" required>
+          <option value="">選択してください</option>
+          <option value="不具合報告">不具合報告</option>
+          <option value="要望">要望</option>
+          <option value="お仕事のご相談">お仕事のご相談</option>
+          <option value="その他">その他</option>
+        </select>
+      </label>
+
+      <label>
+        本文:
+        <textarea name="message"></textarea>
+      </label>
+      <button type="submit">送信</button>
+    </form>
+
   </div>
 
   <script src="../../javascript/menuCtl.js"></script>
+  <script src="../../javascript/confirmPopup.js"></script>
+
 </body>
 </html>

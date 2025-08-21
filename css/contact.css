@@ -1,0 +1,51 @@
+  .main-content form label {
+    display: block;
+    margin-bottom: 20px;
+    color: #ccc;
+    font-weight: 500;
+  }
+
+  .main-content input[type="email"],
+  .main-content select,
+  .main-content textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #222;
+    color: #eee;
+    border: 1px solid #555;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-top: 8px;
+    transition: border-color 0.3s, background-color 0.3s;
+  }
+
+  .main-content input[type="email"]:focus,
+  .main-content select:focus,
+  .main-content textarea:focus {
+    border-color: #66aaff;
+    background-color: #2a2a2a;
+    outline: none;
+  }
+
+  .main-content textarea {
+    height: 140px;
+    resize: vertical;
+  }
+
+  .main-content button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .main-content button:hover {
+    background-color: #0056b3;
+  }

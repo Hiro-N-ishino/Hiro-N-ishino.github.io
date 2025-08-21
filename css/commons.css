@@ -7,7 +7,7 @@
   opacity: 1;
   animation: fadeInOut_bg 3s forwards;
   pointer-events: none;
-  z-index: 1;
+  z-index: 11;
 }
 @keyframes fadeInOut_bg{
   0%{
@@ -37,7 +37,7 @@
   opacity: 0;
   animation: fadeInOut_logo 3s forwards;
   pointer-events: none;
-  z-index: 2;
+  z-index: 12;
 }
 @keyframes fadeInOut_logo{
   0%{
@@ -74,7 +74,7 @@ body{
   justify-content: space-between;
   padding: 1rem;
   position: sticky;
-  z-index: 3;
+  z-index: 13;
 }
 
 .header_home{
@@ -87,7 +87,7 @@ body{
   justify-content: space-between;
   padding: 1rem;
   position: sticky;
-  z-index: 3;
+  z-index: 13;
   opacity: 0;
   animation: fadeInHeader 0.5s ease-in forwards;
   animation-delay: 2s;
@@ -106,7 +106,7 @@ img.header_logo{
   height: 30px;
   vertical-align: middle;
   margin-right: 0.5em;
-  filter: drop-shadow(0 0 8px rgba(255, 250, 180, 1));
+  filter: drop-shadow(0 0 8px rgb(255, 255, 255));
 }
 
 .menu-icon {
@@ -117,7 +117,10 @@ img.header_logo{
 
 .menu-toggle {
   display: none;
-  z-index: 100;
+}
+
+.nav {
+  z-index 100;
 }
 
 .nav a {
