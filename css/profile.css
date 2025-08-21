@@ -49,7 +49,7 @@
 ul.profile-list {
   width: 100%;
   background-color: white;
-  padding-left: calc(1.2em + 12px);
+  padding-left: 0;
   margin-top: 20px;
   color: #333;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -63,10 +63,17 @@ ul.profile-list {
 ul.profile-list li {
   margin-bottom: 8px;
   color: #555;
+  position: relative;
+  padding-left: 2em;
+  text-indent: 0em;  
 }
 
 ul.profile-list li::before {
   content: "✓";
   color: green;
+  position: absolute;
+  left: 0.6em;
+  width: 1em;
+  display: inline-block;
   margin-right: 0.8em;
 }

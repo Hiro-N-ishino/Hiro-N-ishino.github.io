@@ -173,17 +173,11 @@ img.header_logo{
     gap: 1rem;
   }
 
-/*
-  .nav li {
-    text-align: center;
-    padding: 0.5rem 0;
-  }
-*/
-
   .menu-toggle:checked + .menu-icon + .nav {
     display: flex;
   }
   .nav li a {
+    text-align: center;
     display: block;
     padding: 0.75rem 1rem;
     text-decolation: none;
