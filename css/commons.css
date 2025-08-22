@@ -115,6 +115,43 @@ img.header_logo{
   cursor: pointer;
 }
 
+.lang-switch {
+  font-size: 1rem;
+  white-space: nowrap;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+
+.lang-switch a {
+  color: #7ab8ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  text-shadow: 0 0 2px rgba(122, 184, 255, 0.6);
+}
+
+.lang-switch a:hover {
+  color: #a0c8ff;
+  text-shadow: 0 0 6px rgba(160, 200, 255, 0.9);
+  text-decoration: underline;
+}
+
+.lang-switch .current {
+  color: #444;
+  cursor: default;
+  text-shadow: 1 0 1px rgba(0, 0, 0, 0.3);
+  opacity: 1;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  flex: 1;
+  margin-right: 2rem;
+}
+
 .menu-toggle {
   display: none;
 }
