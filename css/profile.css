@@ -22,6 +22,11 @@
   flex: 2 1 400px;
 }
 
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
 .profile-table{
   width: 100%;
   border-collapse: collapse;
