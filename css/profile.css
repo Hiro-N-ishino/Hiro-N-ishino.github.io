@@ -30,6 +30,7 @@
 
 .profile-table{
   width: 100%;
+  font-size: 1rem;
   border-collapse: collapse;
   margin-top: 20px;
 }
