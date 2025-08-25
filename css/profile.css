@@ -25,6 +25,7 @@
 .table-wrapper {
   width: 100%;
   overflow-x: auto;
+  overflow: visible;
 }
 
 .profile-table{
@@ -82,13 +83,3 @@ ul.profile-list li::before {
   display: inline-block;
   margin-right: 0.8em;
 }
-
-/*
-@media (max-width: 768px) {
-  .profile-table th,
-  .profile-table td {
-    font-size: 0.9rem;
-    padding: 6px 8px;
-  }
-}
-*/

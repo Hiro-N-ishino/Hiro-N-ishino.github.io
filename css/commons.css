@@ -248,6 +248,7 @@ img.header_logo{
   font-size: 1.15rem;
   line-height: 1.6;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: visible;
 }
 
 .main-content h1 {
