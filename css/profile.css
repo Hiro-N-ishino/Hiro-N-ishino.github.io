@@ -83,6 +83,7 @@ ul.profile-list li::before {
   margin-right: 0.8em;
 }
 
+/*
 @media (max-width: 768px) {
   .profile-table th,
   .profile-table td {
@@ -90,3 +91,4 @@ ul.profile-list li::before {
     padding: 6px 8px;
   }
 }
+*/
