@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>.init - CONTACT -</title>
+  <link rel='stylesheet' href='../../css/commons.css'>
+  <link rel='stylesheet' href='../../css/contact.css'>
+</head>
+<body>
+  <header class='header'>
+    <div class='logo'>
+      <a href='../en/index_en.html'><img src='../../images/dot_init_transparent.png' class='header_logo'></a>.init
+    </div>
+
+    <div class="header-right">
+      <div class="lang-switch">
+        <a href="../ja/contact.html">JA</a>｜
+        <span class="current">EN</span>
+      </div>
+    </div>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <nav class='nav'>
+      <ul>
+        <li><a href='./index_en.html'>Home</a></li>
+        <li><a href='./profile_en.html'>Profile</a></li>
+        <li><a href='./products_en.html'>Products</a></li>
+        <li><a href='./contact_en.html'>Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class='main-content'>
+    <h1>Contact</h1>
+      <p>
+      </p>
+    <form action="https://formspree.io/f/xrblwvgz" method="POST">
+      <label>
+        Reply-To address:
+        <input type="email" name="email">
+      </label>
+
+      <label>
+        Inquiry details:
+        <select name="inquiry-type" required>
+          <option value="">(Please Select)</option>
+          <option value="不具合報告">Bug Report</option>
+          <option value="要望">Feature Request</option>
+          <option value="お仕事のご相談">Business Inquiry</option>
+          <option value="その他">Other</option>
+        </select>
+      </label>
+
+      <label>
+        Inquiry Message:
+        <textarea name="message"></textarea>
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+
+  </div>
+
+  <div id="customConfirm" class="custom-confirm-modal" style="display:none;">
+    <div class="modal-content">
+      <p>Are you sure you want to submit?</p>
+      <div class="button-group">
+        <button class="btn btn-confirm" id="modal-yes">はい</button>
+        <button class="btn btn-cancel" id="modal-no">キャンセル</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../javascript/menuCtl.js"></script>
+  <script src="../../javascript/confirmPopup_en.js"></script>
+
+</body>
+</html>
