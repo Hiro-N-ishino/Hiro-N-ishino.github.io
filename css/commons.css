@@ -62,6 +62,22 @@
 
 body{
   font-family: sans-serif;
+  background: repeating-linear-gradient(
+    45deg,
+    #e0e0e0,
+    #e0e0e0 50px,
+    #e8e8e8 65px,
+    #f0f0f0 80px,
+    #f8f8f8 95px,
+    #fff 110px,
+    #f8f8f8 125px,
+    #f0f0f0 140px,
+    #e8e8e8 155px,
+    #e0e0e0 170px
+  );
+  background-attachment: fixed;
+  background-position: 0 0;
+  background-size: auto;
 }
 
 .header{
